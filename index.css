@@ -10879,7 +10879,7 @@ html {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 100;
 }
 #mainNav .navbar-brand {
   color: #fff;
@@ -10904,14 +10904,30 @@ html {
   padding: 0.8rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px),  (min-width: 200px),  (min-width: 300px) {
+    #tela1 .titulo 
+    {
+    font-size: 3dvh;
+    }
+}
+
+@media (min-width: 900px),  (min-width: 200px),  (min-width: 300px) {
+  #about .tituloDescricao{
+    font-size: 3dvh;
+  }
+
+}
+
+
+@media (min-width: 900px),  (min-width: 200px),  (min-width: 300px) {
   #mainNav {
+    width: 100%;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
+    font-size: 1dvh;
     transition: font-size 0.3s;
   }
   #mainNav .navbar-nav {
@@ -10966,7 +10982,7 @@ html {
   width: 15rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px),  (min-width: 200px),  (min-width: 300px) {
   .masthead {
     padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
